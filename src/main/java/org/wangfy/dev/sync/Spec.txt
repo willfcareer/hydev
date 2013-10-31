@@ -1,9 +1,0 @@
-START	
-FNAME	commons-lang.jar
-PATH	WEB-INF\lib\
-CONT	010101001
-FNAME	commons-logging.jar
-PATH	WEB-INF\lib\
-SIZE	1000000
-CONT	10101010
-END		
