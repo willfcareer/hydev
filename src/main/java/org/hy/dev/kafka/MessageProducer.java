@@ -17,14 +17,14 @@ public class MessageProducer {
 
 	public static void main(String[] args) throws InterruptedException {
 		// long events = Long.parseLong(args[0]);
-		long events = 1000000;
+		long events = 1000000000;
 		Random rnd = new Random();
 
 		Properties props = new Properties();
 		props.put("metadata.broker.list", "hyrhel:9092,broker5:9092");
 		props.put("serializer.class", "kafka.serializer.StringEncoder");
 		props.put("partitioner.class", "org.hy.dev.kafka.MessagePartitioner");
-		props.put("request.required.acks", "1");
+		props.put("request.required.acks", "0");
 
 		ProducerConfig config = new ProducerConfig(props);
 		
@@ -35,6 +35,7 @@ public class MessageProducer {
 			long runtime = new Date().getTime();
 			String ip = "192.168.2." + rnd.nextInt(2);
 			String msg = nEvents + "," + runtime + ",www.example.com," + ip;
+			log.info(msg);
 			KeyedMessage<String, String> data = new KeyedMessage<String, String>("chatmsg", ip, msg);
 			try{
 				producer.send(data);				
@@ -42,7 +43,7 @@ public class MessageProducer {
 			}catch(Exception e){
 				e.printStackTrace();
 			}
-			Thread.sleep(1000);
+//			Thread.sleep(1000);
 		}
 		producer.close();
 		long end = System.currentTimeMillis();
