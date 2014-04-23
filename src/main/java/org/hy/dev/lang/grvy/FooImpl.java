@@ -1,4 +1,4 @@
-package org.hy.dev.zk.grvy;
+package org.hy.dev.lang.grvy;
 
 public class FooImpl implements Foo{
 	
