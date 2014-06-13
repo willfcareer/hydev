@@ -3,5 +3,7 @@
 .settings/
 target/
 logs/
-.iml
-.ipr
+*.iml
+*.ipr
+*.iws
+.idea/
