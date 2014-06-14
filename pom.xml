@@ -66,8 +66,8 @@
     </dependency>
     <dependency>
       <groupId>org.apache.kafka</groupId>
-      <artifactId>kafka_2.8.0</artifactId>
-      <version>0.8.0-beta1</version>
+      <artifactId>kafka_2.9.2</artifactId>
+      <version>0.8.1.1</version>
     </dependency>
     <!-- <dependency> <groupId>org.apache.hadoop</groupId> <artifactId>zookeeper</artifactId>
       <version>3.3.1</version> </dependency> -->
