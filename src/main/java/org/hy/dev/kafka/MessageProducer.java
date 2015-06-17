@@ -23,7 +23,7 @@ public class MessageProducer {
 		Properties props = new Properties();
 		props.put("metadata.broker.list", "hyrhel:9092,broker5:9092");
 		props.put("serializer.class", "kafka.serializer.StringEncoder");
-		props.put("partitioner.class", "org.hy.dev.kafka.MessagePartitioner");
+		props.put("partitioner.class", "org.hy.dev.kafka.MyPartitioner");
 		props.put("request.required.acks", "0");
 
 		ProducerConfig config = new ProducerConfig(props);
