@@ -1,0 +1,12 @@
+user1,item1,1
+user1,item2,1
+user2,item1,3
+user2,item3,1
+user3,item3,1
+user3,item4,1
+user4,item2,1
+user4,item4,1
+user5,item1,1
+user5,item2,1
+user5,item3,1
+user6,item4,1
